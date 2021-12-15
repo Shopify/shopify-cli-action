@@ -1,0 +1,17 @@
+{
+  "name": "shopify-cli-action",
+  "version": "0.1.0",
+  "description": "A GitHub Action to run the Shopify CLI in a CI environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shopify/shopify-cli-action.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shopify/shopify-cli-action/issues"
+  },
+  "homepage": "https://github.com/Shopify/shopify-cli-action#readme"
+}

@@ -1,0 +1,9 @@
+name: Shopify CLI
+description: "Run the Shopify CLI in a GitHub Actions CI environment."
+inputs: 
+  command: 
+    description: "The command to execute"
+    required: true
+runs: 
+  main: index.js
+  using: node12
