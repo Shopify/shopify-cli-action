@@ -13,6 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: "./"
-        name: Output the CLI version
+        name: Shopify CLI help
         with:
-          command: "version"
+          command: "help"
