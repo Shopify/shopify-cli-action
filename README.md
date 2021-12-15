@@ -3,11 +3,11 @@
   <h1>Shopify CLI Action</h1>
 </div>
 
-
 This repository contains a [GitHub Action](https://github.com/features/actions) to use the Shopify CLI from CI pipelines.
 
-
 ## Usage
+
+Add a new step to your GitHub Actions workflow that uses `tuist/shopify-cli-action`.
 
 ```yaml
 name: My project
