@@ -1,3 +1,4 @@
+const core = require('@actions/core');
 const execSync = require('./execSync');
 const input = require('./input');
 
