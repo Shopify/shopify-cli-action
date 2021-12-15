@@ -7,7 +7,7 @@ This repository contains a [GitHub Action](https://github.com/features/actions) 
 
 ## Usage
 
-Add a new step to your GitHub Actions workflow that uses `tuist/shopify-cli-action`.
+Add a new step to your GitHub Actions workflow that uses `shopify/shopify-cli-action`.
 
 ```yaml
 name: My project
@@ -24,7 +24,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: tuist/shopify-cli-action@0.1.0
+      - uses: shopify/shopify-cli-action@0.1.0
         with:
           command: 'script push'
 ```
