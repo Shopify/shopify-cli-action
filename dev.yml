@@ -12,14 +12,8 @@ up:
 
 test:
   desc: "Run tests."
-  run: |
-    if [ "$#" -eq 1 ] && [[ -f $1 ]];
-    then
-      bundle exec rake test TEST=$1
-    else
-      bundle exec rake test $@
-    fi
+  run: yarn run test
 
 commands:
-  style:
-    run: bundle exec rubocop .
+  format:
+    run: yarn run format
