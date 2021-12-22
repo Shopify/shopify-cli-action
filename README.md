@@ -24,7 +24,8 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: shopify/shopify-cli-action@v1
+      - uses: shopify/shopify-cli-action@0.1.0
         with:
+          path: 'scripts/my_script'
           command: 'script push'
 ```
