@@ -26,5 +26,6 @@ jobs:
       - uses: actions/checkout@v1
       - uses: shopify/shopify-cli-action@v1
         with:
+          path: 'scripts/my_script'
           command: 'script push'
 ```
