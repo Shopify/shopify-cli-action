@@ -34,6 +34,7 @@
     "nodejs-file-downloader": "^4.8.1",
     "platform": "^1.3.6",
     "prettier": "^2.5.1",
+    "sane": "^5.0.1",
     "setup-ruby": "https://github.com/ruby/setup-ruby",
     "tmp": "^0.2.1"
   },
