@@ -31,15 +31,14 @@
   dependencies:
     "@actions/io" "^1.0.1"
 
-"@actions/github@^4.0.0":
-  "integrity" "sha512-Ej/Y2E+VV6sR9X7pWL5F3VgEWrABaT292DRqRU6R4hnQjPtC/zD3nagxVdXWiRQvYDh8kHXo7IDmG42eJ/dOMA=="
-  "resolved" "https://registry.npmjs.org/@actions/github/-/github-4.0.0.tgz"
-  "version" "4.0.0"
+"@actions/github@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@actions/github/-/github-5.0.0.tgz#1754127976c50bd88b2e905f10d204d76d1472f8"
   dependencies:
-    "@actions/http-client" "^1.0.8"
-    "@octokit/core" "^3.0.0"
-    "@octokit/plugin-paginate-rest" "^2.2.3"
-    "@octokit/plugin-rest-endpoint-methods" "^4.0.0"
+    "@actions/http-client" "^1.0.11"
+    "@octokit/core" "^3.4.0"
+    "@octokit/plugin-paginate-rest" "^2.13.3"
+    "@octokit/plugin-rest-endpoint-methods" "^5.1.1"
 
 "@actions/glob@^0.1.0":
   "integrity" "sha512-SclLR7Ia5sEqjkJTPs7Sd86maMDw43p769YxBOxvPvEWuPEhpAnBsQfENOpXjFYMmhCqd127bmf+YdvJqVqR4A=="
@@ -717,10 +716,9 @@
   dependencies:
     "@octokit/types" "^6.0.3"
 
-"@octokit/core@^3.0.0", "@octokit/core@>=2", "@octokit/core@>=3":
-  "integrity" "sha512-omncwpLVxMP+GLpLPgeGJBF6IWJFjXDS5flY5VbppePYX9XehevbDykRH9PdCdvqt9TS5AOTiDide7h0qrkHjw=="
-  "resolved" "https://registry.npmjs.org/@octokit/core/-/core-3.5.1.tgz"
-  "version" "3.5.1"
+"@octokit/core@^3.4.0":
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/@octokit/core/-/core-3.5.1.tgz#8601ceeb1ec0e1b1b8217b960a413ed8e947809b"
   dependencies:
     "@octokit/auth-token" "^2.4.4"
     "@octokit/graphql" "^4.5.8"
@@ -753,20 +751,18 @@
   "resolved" "https://registry.npmjs.org/@octokit/openapi-types/-/openapi-types-11.2.0.tgz"
   "version" "11.2.0"
 
-"@octokit/plugin-paginate-rest@^2.2.3":
-  "integrity" "sha512-tzMbrbnam2Mt4AhuyCHvpRkS0oZ5MvwwcQPYGtMv4tUa5kkzG58SVB0fcsLulOZQeRnOgdkZWkRUiyBlh0Bkyw=="
-  "resolved" "https://registry.npmjs.org/@octokit/plugin-paginate-rest/-/plugin-paginate-rest-2.17.0.tgz"
-  "version" "2.17.0"
+"@octokit/plugin-paginate-rest@^2.13.3":
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-paginate-rest/-/plugin-paginate-rest-2.17.0.tgz#32e9c7cab2a374421d3d0de239102287d791bce7"
   dependencies:
     "@octokit/types" "^6.34.0"
 
-"@octokit/plugin-rest-endpoint-methods@^4.0.0":
-  "integrity" "sha512-4gQg4ySoW7ktKB0Mf38fHzcSffVZd6mT5deJQtpqkuPuAqzlED5AJTeW8Uk7dPRn7KaOlWcXB0MedTFJU1j4qA=="
-  "resolved" "https://registry.npmjs.org/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-4.15.1.tgz"
-  "version" "4.15.1"
+"@octokit/plugin-rest-endpoint-methods@^5.1.1":
+  version "5.13.0"
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-5.13.0.tgz#8c46109021a3412233f6f50d28786f8e552427ba"
   dependencies:
-    "@octokit/types" "^6.13.0"
-    "deprecation" "^2.3.1"
+    "@octokit/types" "^6.34.0"
+    deprecation "^2.3.1"
 
 "@octokit/request-error@^2.0.5", "@octokit/request-error@^2.1.0":
   "integrity" "sha512-1VIvgXxs9WHSjicsRwq8PlR2LR2x6DwsJAaFgzdi0JfJoGSO8mYI/cHJQ+9FbN21aa+DrgNLnwObmyeSC8Rmpg=="
@@ -789,10 +785,9 @@
     "node-fetch" "^2.6.1"
     "universal-user-agent" "^6.0.0"
 
-"@octokit/types@^6.0.3", "@octokit/types@^6.13.0", "@octokit/types@^6.16.1", "@octokit/types@^6.34.0":
-  "integrity" "sha512-s1zLBjWhdEI2zwaoSgyOFoKSl109CUcVBCc7biPJ3aAf6LGLU6szDvi31JPU7bxfla2lqfhjbbg/5DdFNxOwHw=="
-  "resolved" "https://registry.npmjs.org/@octokit/types/-/types-6.34.0.tgz"
-  "version" "6.34.0"
+"@octokit/types@^6.0.3", "@octokit/types@^6.16.1", "@octokit/types@^6.34.0":
+  version "6.34.0"
+  resolved "https://registry.npmjs.org/@octokit/types/-/types-6.34.0.tgz"
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
 
