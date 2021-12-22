@@ -4,6 +4,9 @@ inputs:
   command: 
     description: "The command to execute"
     required: true
+  path: 
+    description: "Relative path of a folder to run the command"
+    required: false
 runs: 
   main: index.js
   using: node12
