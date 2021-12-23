@@ -7,7 +7,7 @@ module.exports = () => {
     execSync('gem install shopify-cli');
     const path = input.path() || '.';
     const envVars = input.authToken()
-      ? `SHOPIFY_CLI_AUTH_TOKEN = ${input.authToken()}`
+      ? `SHOPIFY_CLI_AUTH_TOKEN=${input.authToken()}`
       : '';
     execSync(`cd ${path} && ${envVars} shopify ${input.command()}`);
   } catch (error) {
