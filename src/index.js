@@ -6,8 +6,10 @@ module.exports = () => {
   try {
     execSync('gem install shopify-cli');
     const path = input.path() || '.';
-    core.debug(`Running ${input.command()} on path: ${path}`);
-    execSync(`cd ${path} && shopify ${input.command()}`);
+    const envVars = input.authToken()
+      ? `SHOPIFY_CLI_AUTH_TOKEN = ${input.authToken()}`
+      : '';
+    execSync(`cd ${path} && ${envVars} shopify ${input.command()}`);
   } catch (error) {
     core.setFailed(error.message);
   }

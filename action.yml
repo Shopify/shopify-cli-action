@@ -7,6 +7,9 @@ inputs:
   path: 
     description: "Relative path of a folder to run the command"
     required: false
+  auth-token: 
+    description: "CLI authentication token to use as the SHOPIFY_CLI_AUTH_TOKEN ENV variable"
+    required: false
 runs: 
   main: index.js
   using: node12
