@@ -9,12 +9,19 @@ describe('execSync', () => {
     childProcess.execSync = jest.fn();
 
     // When
-    execSync('shopify command');
+    execSync(
+      'shopify command',
+      { cwd: '/path' },
+      { MY_VARIABLE: 'VALUE' },
+    );
 
     // Then
     expect(childProcess.execSync).toHaveBeenCalledWith(
       'shopify command',
-      {},
+      {
+        cwd: '/path',
+        env: { MY_VARIABLE: 'VALUE', ...process.env },
+      },
     );
   });
 });

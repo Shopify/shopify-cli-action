@@ -27,6 +27,6 @@ jobs:
       - uses: shopify/shopify-cli-action@v1
         with:
           path: 'scripts/my_script'
-          auth-token: 'xxx'
+          auth-token: ${{ secrets.SHOPIFY_CLI_AUTH_TOKEN }}
           command: 'script push'
 ```
