@@ -6,12 +6,9 @@ const input = require('./input');
 module.exports = () => {
   try {
     execSync('gem install shopify-cli');
-    let cwd;
-    if (input.path()) {
-      cwd = path.resolve(input.path());
-    } else {
-      cwd = process.cwd();
-    }
+    const cwd = input.path()
+      ? path.resolve(input.path())
+      : process.cwd();
     const env = {};
     if (input.authToken()) {
       env.SHOPIFY_CLI_AUTH_TOKEN = input.authToken();
