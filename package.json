@@ -1,6 +1,6 @@
 {
   "name": "shopify-cli-action",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A GitHub Action to run the Shopify CLI in a CI environment",
   "main": "index.js",
   "scripts": {
