@@ -9,7 +9,7 @@ module.exports = () => {
     const cwd = input.path()
       ? path.resolve(input.path())
       : process.cwd();
-    const env = { SHOPIFY_CLI_STACKTRACE: 1 };
+    const env = {};
     if (input.authToken()) {
       env.SHOPIFY_CLI_AUTH_TOKEN = input.authToken();
     }
