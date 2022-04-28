@@ -5,7 +5,7 @@ const input = require('./input');
 
 module.exports = () => {
   try {
-    execSync('gem install shopify-cli');
+    execSync('sudo gem install shopify-cli');
     const cwd = input.path()
       ? path.resolve(input.path())
       : process.cwd();
