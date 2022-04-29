@@ -24,9 +24,14 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.5
       - uses: shopify/shopify-cli-action@v1
         with:
           path: 'scripts/my_script'
           auth-token: ${{ secrets.SHOPIFY_CLI_AUTH_TOKEN }}
           command: 'script push'
 ```
+
+**Note:** It's important that Ruby is installed through the `ruby/setup-ruby` action to prevent permission-related issues using the system Ruby.
