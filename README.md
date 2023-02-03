@@ -3,7 +3,7 @@
   <h1>Shopify CLI Action</h1>
 </div>
 
-This repository contains a [GitHub Action](https://github.com/features/actions) to use the Shopify CLI from CI pipelines.
+This repository contains a [GitHub Action](https://github.com/features/actions) to use the Shopify CLI 2.x from CI pipelines.
 
 ## Usage
 
